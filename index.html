@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Törigyó</title>
+    <title>B                                                                                                            elépés</title>
 </head>
 <body>
-    
+    <form action="javascript:csinald()">
+        <fieldset>
+            <legend>Belépés</legend>
+            <input type="email" name="mail" id="mail" placeholder="email">
+            <input type="password" name="pass" id="pass" placeholder="jelszó">
+            <input type="submit" value="Enter">
+        </fieldset>
+        
+    </form>
+
+    <script>
+        function csinald() {
+
+            if(mail.value == ""){
+                alert("Nem adtál meg email-t")
+            }
+            else{
+                if(pass.value == "kisabdul"){
+                    alert("Belépés engedélyezve");
+                    window.open("https://kissadambat.github.io/web/")
+                }
+                else if (pass.value ==""){
+                    alert("Nem adtál meg jelszót");
+                }
+                else{
+                    alert("Hibás jelszó"); 
+                }
+            }
+
+            
+        }
+    </script>
 </body>
 </html>
